@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  firstdemoapi:
+    image: ${DOCKER_REGISTRY-}firstdemoapi
+    build:
+      context: .
+      dockerfile: FirstDemoApp/FirstDemoApi/Dockerfile
+
+  fourthdemoapi:
+    image: ${DOCKER_REGISTRY-}fourthdemoapi
+    build:
+      context: .
+      dockerfile: FourthDemoApp/FourthDemoAPI/Dockerfile
+
+
+  seconddemoapi:
+    image: ${DOCKER_REGISTRY-}seconddemoapi
+    build:
+      context: .
+      dockerfile: SecondDemoApp/SecondDemoApi/Dockerfile
+
+
+  thirddemoapi:
+    image: ${DOCKER_REGISTRY-}thirddemoapi
+    build:
+      context: .
+      dockerfile: ThirdDemoApp/ThirdDemoAPI/Dockerfile
+
