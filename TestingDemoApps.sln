@@ -9,41 +9,39 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SecondDemoApp", "SecondDemo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThirdDemoApp", "ThirdDemoApp", "{CCB1EB3E-5B3F-49A5-84CF-0D0543FDBAE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstDemoApi", "FirstDemoApp\FirstDemoApi\FirstDemoApi.csproj", "{1B8E30AD-A498-4B11-BC85-FEC5EE06CC30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarSystemAPI", "FirstDemoApp\FirstDemoApi\CarSystemAPI.csproj", "{1B8E30AD-A498-4B11-BC85-FEC5EE06CC30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstDemoClassone", "FirstDemoApp\FirstDemoClassone\FirstDemoClassone.csproj", "{2880249C-A6C0-4FCB-BA20-E3452B702D48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarSystemDomain", "FirstDemoApp\FirstDemoClassone\CarSystemDomain.csproj", "{2880249C-A6C0-4FCB-BA20-E3452B702D48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstDemoClasstwo", "FirstDemoApp\FirstDemoClasstwo\FirstDemoClasstwo.csproj", "{7D87950C-E033-4910-8322-CE37FA852E85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarSystemApplication", "FirstDemoApp\FirstDemoClasstwo\CarSystemApplication.csproj", "{7D87950C-E033-4910-8322-CE37FA852E85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstDemoClassthree", "FirstDemoApp\FirstDemoClassthree\FirstDemoClassthree.csproj", "{A9A1AFA4-34A2-4486-8AE5-2CB7B5CD51D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarSystemInfrastructure", "FirstDemoApp\FirstDemoClassthree\CarSystemInfrastructure.csproj", "{A9A1AFA4-34A2-4486-8AE5-2CB7B5CD51D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondDemoApi", "SecondDemoApp\SecondDemoApi\SecondDemoApi.csproj", "{38D7F390-D88E-4CB6-816F-6E41ADF461F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecondDemoApi", "SecondDemoApp\SecondDemoApi\SecondDemoApi.csproj", "{38D7F390-D88E-4CB6-816F-6E41ADF461F1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FourthDemoApp", "FourthDemoApp", "{344D37FD-D234-47CF-8D72-FEF4790D8D58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondDemoClassone", "SecondDemoApp\SecondDemoClassone\SecondDemoClassone.csproj", "{F8EE0B7E-9958-4C8A-9890-DE0943B3AFFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecondDemoClassone", "SecondDemoApp\SecondDemoClassone\SecondDemoClassone.csproj", "{F8EE0B7E-9958-4C8A-9890-DE0943B3AFFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondDemoClasstwo", "SecondDemoApp\SecondDemoClasstwo\SecondDemoClasstwo.csproj", "{6C02A520-D2DA-4E02-9CC3-391B92011797}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecondDemoClasstwo", "SecondDemoApp\SecondDemoClasstwo\SecondDemoClasstwo.csproj", "{6C02A520-D2DA-4E02-9CC3-391B92011797}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondDemoClassthree", "SecondDemoApp\SecondDemoClassthree\SecondDemoClassthree.csproj", "{B51A02AE-2C8A-4163-8D81-3724E1DA0A2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecondDemoClassthree", "SecondDemoApp\SecondDemoClassthree\SecondDemoClassthree.csproj", "{B51A02AE-2C8A-4163-8D81-3724E1DA0A2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdDemoAPI", "ThirdDemoApp\ThirdDemoAPI\ThirdDemoAPI.csproj", "{8FEEE59D-B9E0-4CFA-B5F2-375E43FEB241}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThirdDemoAPI", "ThirdDemoApp\ThirdDemoAPI\ThirdDemoAPI.csproj", "{8FEEE59D-B9E0-4CFA-B5F2-375E43FEB241}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdDemoClassone", "ThirdDemoApp\ThirdDemoClassone\ThirdDemoClassone.csproj", "{0FB7604C-34B5-47A6-AA33-7DBB307FBB08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThirdDemoClassone", "ThirdDemoApp\ThirdDemoClassone\ThirdDemoClassone.csproj", "{0FB7604C-34B5-47A6-AA33-7DBB307FBB08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdDemoClasstwo", "ThirdDemoApp\ThirdDemoClasstwo\ThirdDemoClasstwo.csproj", "{0CBDE413-67A9-469A-A371-9BA6F71A6010}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThirdDemoClasstwo", "ThirdDemoApp\ThirdDemoClasstwo\ThirdDemoClasstwo.csproj", "{0CBDE413-67A9-469A-A371-9BA6F71A6010}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdDemoClassthree", "ThirdDemoApp\ThirdDemoClassthree\ThirdDemoClassthree.csproj", "{56B0DAFB-4429-455A-AD0D-138458F951B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThirdDemoClassthree", "ThirdDemoApp\ThirdDemoClassthree\ThirdDemoClassthree.csproj", "{56B0DAFB-4429-455A-AD0D-138458F951B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FourthDemoAPI", "FourthDemoApp\FourthDemoAPI\FourthDemoAPI.csproj", "{2C37CF9B-A982-485F-874D-AB501ABF2F59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FourthDemoAPI", "FourthDemoApp\FourthDemoAPI\FourthDemoAPI.csproj", "{2C37CF9B-A982-485F-874D-AB501ABF2F59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FourthDemoClassone", "FourthDemoApp\FourthDemoClassone\FourthDemoClassone.csproj", "{9D9A0CA2-304E-4DC6-8FD9-2AA3EDDC77E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FourthDemoClassone", "FourthDemoApp\FourthDemoClassone\FourthDemoClassone.csproj", "{9D9A0CA2-304E-4DC6-8FD9-2AA3EDDC77E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FourthDemoClasstwo", "FourthDemoApp\FourthDemoClasstwo\FourthDemoClasstwo.csproj", "{E84F9262-676F-43C3-9B1C-7D62FC877845}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FourthDemoClasstwo", "FourthDemoApp\FourthDemoClasstwo\FourthDemoClasstwo.csproj", "{E84F9262-676F-43C3-9B1C-7D62FC877845}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FourthDemoClassthree", "FourthDemoApp\FourthDemoClassthree\FourthDemoClassthree.csproj", "{9F211720-534E-4456-8576-D0D9348C7D71}"
-EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{BA95B3EF-7EC5-434F-87E8-A09C25CF5A33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FourthDemoClassthree", "FourthDemoApp\FourthDemoClassthree\FourthDemoClassthree.csproj", "{9F211720-534E-4456-8576-D0D9348C7D71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,10 +113,6 @@ Global
 		{9F211720-534E-4456-8576-D0D9348C7D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F211720-534E-4456-8576-D0D9348C7D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F211720-534E-4456-8576-D0D9348C7D71}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BA95B3EF-7EC5-434F-87E8-A09C25CF5A33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BA95B3EF-7EC5-434F-87E8-A09C25CF5A33}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BA95B3EF-7EC5-434F-87E8-A09C25CF5A33}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BA95B3EF-7EC5-434F-87E8-A09C25CF5A33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
