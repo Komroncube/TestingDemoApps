@@ -39,12 +39,12 @@ namespace CarSystemAPI.Controllers
         [HttpGet]
         public IActionResult GetSecond()
         {
-            return Ok(Class12.name);
+            return Ok();
         }
         [HttpGet]
         public IActionResult GetThird()
         {
-            return Ok(Class13.name);
+            return Ok();
         }
     }
 }
