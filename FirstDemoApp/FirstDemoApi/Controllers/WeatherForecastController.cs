@@ -1,12 +1,8 @@
-using FirstDemoClassone;
-using FirstDemoClassthree;
-using FirstDemoClasstwo;
+using CarSystemApplication;
+using CarSystemInfrastructure;
 using Microsoft.AspNetCore.Mvc;
-using SecondDemoClassone;
-using SecondDemoClassthree;
-using SecondDemoClasstwo;
 
-namespace FirstDemoApi.Controllers
+namespace CarSystemAPI.Controllers
 {
     [ApiController]
     [Route("[controller]/[action]")]
@@ -35,20 +31,20 @@ namespace FirstDemoApi.Controllers
             })
             .ToArray();
         }
-        [HttpGet] 
+        [HttpGet]
         public IActionResult GetFirst()
         {
-            return Ok(Class21.name);
+            return Ok();
         }
         [HttpGet]
         public IActionResult GetSecond()
         {
-            return Ok(Class22.name);
+            return Ok(Class12.name);
         }
         [HttpGet]
         public IActionResult GetThird()
         {
-            return Ok(Class23.name);
+            return Ok(Class13.name);
         }
     }
 }

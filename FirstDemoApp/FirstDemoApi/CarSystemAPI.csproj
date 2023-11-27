@@ -19,9 +19,9 @@
     <ProjectReference Include="..\..\SecondDemoApp\SecondDemoClassone\SecondDemoClassone.csproj" />
     <ProjectReference Include="..\..\SecondDemoApp\SecondDemoClassthree\SecondDemoClassthree.csproj" />
     <ProjectReference Include="..\..\SecondDemoApp\SecondDemoClasstwo\SecondDemoClasstwo.csproj" />
-    <ProjectReference Include="..\FirstDemoClassone\FirstDemoClassone.csproj" />
-    <ProjectReference Include="..\FirstDemoClassthree\FirstDemoClassthree.csproj" />
-    <ProjectReference Include="..\FirstDemoClasstwo\FirstDemoClasstwo.csproj" />
+    <ProjectReference Include="..\FirstDemoClassone\CarSystemDomain.csproj" />
+    <ProjectReference Include="..\FirstDemoClassthree\CarSystemInfrastructure.csproj" />
+    <ProjectReference Include="..\FirstDemoClasstwo\CarSystemApplication.csproj" />
   </ItemGroup>
 
 </Project>
