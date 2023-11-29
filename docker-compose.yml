@@ -1,29 +1,27 @@
 version: '3.4'
 
 services:
-  firstdemoapi:
-    image: ${DOCKER_REGISTRY-}firstdemoapi
-    build:
-      context: .
-      dockerfile: FirstDemoApp/FirstDemoApi/Dockerfile
-
-  fourthdemoapi:
-    image: ${DOCKER_REGISTRY-}fourthdemoapi
-    build:
-      context: .
-      dockerfile: FourthDemoApp/FourthDemoAPI/Dockerfile
-
-
-  seconddemoapi:
-    image: ${DOCKER_REGISTRY-}seconddemoapi
-    build:
-      context: .
-      dockerfile: SecondDemoApp/SecondDemoApi/Dockerfile
-
-
-  thirddemoapi:
-    image: ${DOCKER_REGISTRY-}thirddemoapi
-    build:
-      context: .
-      dockerfile: ThirdDemoApp/ThirdDemoAPI/Dockerfile
-
+    sqldata:
+        container_name: sqldb
+        image: mcr.microsoft.com/mssql/server:2022-latest
+        environment:
+            - SA_PASSWORD=Komron#0708
+            - ACCEPT_EULA=Y
+        volumes:
+            - ./dbdata:/var/opt/mssql/data
+        ports:
+            - 1450:1433
+    carsystemapi:
+        container_name: carapi
+        image: ${DOCKER_REGISTRY-}carsystemapi
+        build:
+          context: .
+          dockerfile: FirstDemoApp/FirstDemoApi/Dockerfile
+        environment:
+          - DB_HOST=sqldata
+          - DB_NAME=CarDb
+          - DB_SA_PASSWORD=Komron#0708
+        depends_on:
+          - sqldata
+      
+  
