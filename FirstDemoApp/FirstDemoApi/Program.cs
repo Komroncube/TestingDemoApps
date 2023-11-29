@@ -1,3 +1,8 @@
+using CarSystemApplication.Data;
+using CarSystemApplication.Repositories;
+using CarSystemInfrastructure.Services;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +11,22 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+var dbHost = Environment.GetEnvironmentVariable("DB_HOST");
+var dbName = Environment.GetEnvironmentVariable("DB_NAME");
+var dbPassword = Environment.GetEnvironmentVariable("DB_SA_PASSWORD");
+
+var connectionString = $"Data Source={dbHost};Initial Catalog={dbName};Persist Security Info=True;User ID = SA;Password={dbPassword};Connect Timeout = 30;Encrypt=False;TrustServerCertificate=True;Application Intent = ReadWrite;MultipleActiveResultSets=false;MultiSubnetFailover=True; Application Name=Ovit_Software;Pooling=True;";
+
+
+builder.Services.AddDbContext<CarDbContext>(options =>
+{
+    options.UseSqlServer(connectionString);
+    //options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+
+builder.Services.AddTransient<ICarRepository, CarRepository>();
+builder.Services.AddTransient<ICarService, CarService>();
 
 var app = builder.Build();
 
