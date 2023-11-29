@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FirstDemoClassone\CarSystemDomain.csproj" />
+    <ProjectReference Include="..\FirstDemoClasstwo\CarSystemApplication.csproj" />
+  </ItemGroup>
+
 </Project>
