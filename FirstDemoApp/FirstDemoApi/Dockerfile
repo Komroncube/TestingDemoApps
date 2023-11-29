@@ -8,17 +8,17 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["FirstDemoApp/FirstDemoApi/FirstDemoApi.csproj", "FirstDemoApp/FirstDemoApi/"]
-RUN dotnet restore "./FirstDemoApp/FirstDemoApi/./FirstDemoApi.csproj"
+COPY ["FirstDemoApp/FirstDemoApi/CarSystemAPI.csproj", "FirstDemoApp/CarSystemAPI/"]
+RUN dotnet restore "./FirstDemoApp/CarSystemAPI/./CarSystemAPI.csproj"
 COPY . .
-WORKDIR "/src/FirstDemoApp/FirstDemoApi"
-RUN dotnet build "./FirstDemoApi.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/FirstDemoApp/CarSystemAPI"
+RUN dotnet build "./CarSystemAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./FirstDemoApi.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./CarSystemAPI.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "FirstDemoApi.dll"]
+ENTRYPOINT ["dotnet", "CarSystemAPI.dll"]
