@@ -18,32 +18,32 @@ namespace CarSystemApplication.Repositories
             _carDbContext = carDbContext;
         }
 
-        public Task CreateCar(Car car)
+        public async ValueTask CreateCar(Car car)
         {
-            _carDbContext.AddAsync(car);
-            return _carDbContext.SaveChangesAsync();
+            await _carDbContext.AddAsync(car);
+            await _carDbContext.SaveChangesAsync();
         }
 
         public Task DeleteCar(int id)
         {
-            var car = _carDbContext.Cars.FirstOrDefault(x=>x.Id == id);
-            _carDbContext.Cars.Remove(car);
+            var car = _carDbContext.MegaCars.FirstOrDefault(x=>x.Id == id);
+            _carDbContext.MegaCars.Remove(car);
             return _carDbContext.SaveChangesAsync();
         }
 
-        public Task GetAllCars()
+        public async ValueTask<IEnumerable<Car>> GetAllCars()
         {
-            return _carDbContext.Cars.ToListAsync();
+            return await _carDbContext.MegaCars.ToListAsync();
         }
 
-        public Task GetCarById(int id)
+        public async ValueTask<Car> GetCarById(int id)
         {
-            return _carDbContext.Cars.FirstOrDefaultAsync(x => x.Id == id);
+            return await _carDbContext.MegaCars.FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public Task UpdateCar(Car car)
         {
-            var lastcar = _carDbContext.Cars.FirstOrDefault(x=>x.Id == car.Id);
+            var lastcar = _carDbContext.MegaCars.FirstOrDefault(x=>x.Id == car.Id);
             if(lastcar is null)
             {
                 return Task.CompletedTask;

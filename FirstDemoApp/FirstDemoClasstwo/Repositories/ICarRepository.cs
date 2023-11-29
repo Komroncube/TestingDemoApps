@@ -1,12 +1,13 @@
 ﻿using CarSystemDomain;
+using System.Collections.Generic;
 
 namespace CarSystemApplication.Repositories;
 
 public interface ICarRepository
 {
-    Task GetAllCars();
-    Task GetCarById(int id);
+    ValueTask<IEnumerable<Car>> GetAllCars();
+    ValueTask<Car> GetCarById(int id);
     Task UpdateCar(Car car);
     Task DeleteCar(int id);
-    Task CreateCar(Car car);
+    ValueTask CreateCar(Car car);
 }
